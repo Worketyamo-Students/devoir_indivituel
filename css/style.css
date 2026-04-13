@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.ensemble{
+    display: flex;
+    padding: 7.1rem 8.4rem;
+    display: flex;
+    justify-content: space-between;
+}
+.image-principal{
+    display: flex;
+   flex:1; 
+}
+.partie2{
+    display: flex;
+    flex:1
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    padding: 10px;
+}
+h1{
+    text-align: center;
+}
+a{
+    display: flex;
+    text-align: right
+}
+.petite-icone{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+button{
+    background-color:#7286D3
+}
+lin{
+    display: flex;
+justify-content: center;
+}
