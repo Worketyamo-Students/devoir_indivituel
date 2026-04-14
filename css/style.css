@@ -1,53 +1,110 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    display: flex;
-    width: 100vw;
-    height: 100vh;
+::root {
+  --text-style: poppins;
 }
-form{
-    display: flex;
-    flex-direction: column;
+
+body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
 }
-.ensemble{
-    display: flex;
-    padding: 7.1rem 8.4rem;
-    display: flex;
-    justify-content: space-between;
+form {
+  display: flex;
+  flex-direction: column;
 }
-.image-principal{
-    display: flex;
-   flex:1; 
+.ensemble {
+  display: flex;
+  padding: 11.1rem 9.4rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.2rem;
+  align-items: center;
 }
-.partie2{
-    display: flex;
-    flex:1
+.image-principal {
+  display: flex;
+  flex: 1;
+  height: 30rem;
+  width: 30.9rem;
 }
-.name{
-    display: flex;
-    flex-direction: column;
-    border-radius: 6px;
-    padding: 10px;
+.partie2 {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 1.8rem;
+  width: 30.9rem;
+  height: 30rem;
+  padding: 0 4.5rem;
 }
-h1{
-    text-align: center;
+.name {
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  padding: 10px;
 }
-a{
-    display: flex;
-    text-align: right
+.name input {
+  padding: 10px;
+  border-radius: 6px;
 }
-.petite-icone{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.name label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-style: var(--text-style);
+  display: block;
 }
-button{
-    background-color:#7286D3
+h1 {
+  text-align: center;
+  font-style: var(--text-style);
+  text-decoration: none;
 }
-lin{
-    display: flex;
-justify-content: center;
+a {
+  display: flex;
+  text-align: right;
+  font-size: 12px;
+  margin-top: -1Opx;
+  margin-bottom: 10px;
+  text-decoration: none;
 }
+.petite-icone {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+button {
+  background-color: #7286d3;
+  width: 7.5rem;
+  height: 3.5rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-top: 10px;
+  border: none;
+}
+division {
+  display: flex;
+  align-items: center;
+  margin: 25px 0;
+}
+.division::before,
+.division::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+}
+p {
+  text-align: center;
+}
+@media screen(max-width:768px)  {
+    .partie2{
+        flex-direction:column;
+    }
+    .image-principal{
+        display: none;
+        
+    }
+} 
